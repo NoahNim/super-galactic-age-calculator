@@ -34,4 +34,16 @@ describe('galactic', function() {
     let testInput = new galactic('1990-04-21', 70);
     expect(testInput.mercuryLifeExpectancy()).toEqual(291);
   });
+  it('should test users life expectancy on venus', function(){
+    let testInput = new galactic('1990-04-21', 70);
+    expect(testInput.venusLifeExpectancy()).toEqual(112);
+  });
+  it('should test users life expectancy on mars', function(){
+    let testInput = new galactic('1990-04-21', 70);
+    expect(testInput.marsLifeExpectancy()).toEqual(37);
+  });
+  it('should test users life expectancy on jupiter', function(){
+    let testInput = new galactic('1990-04-21', 70);
+    expect(testInput.jupiterLifeExpectancy()).toEqual(5);
+  });
 })

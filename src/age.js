@@ -30,7 +30,19 @@ export class galactic {
     return ageJupiter;
   }
   mercuryLifeExpectancy(){
-    let mercuryLifeExpectancy = Math.floor(this.lifeExpectancy/0.24);
+    let mercuryLifeExpectancy = Math.floor(this.lifeExpectancy/.24);
     return mercuryLifeExpectancy;
+  }
+  venusLifeExpectancy(){
+    let venusLifeExpectancy = Math.floor(this.lifeExpectancy/.62);
+    return venusLifeExpectancy;
+  }
+  marsLifeExpectancy(){
+    let marsLifeExpectancy = Math.floor(this.lifeExpectancy/1.88);
+    return marsLifeExpectancy;
+  }
+  jupiterLifeExpectancy(){
+    let jupiterLifeExpectancy = Math.floor(this.lifeExpectancy/11.86);
+    return jupiterLifeExpectancy;
   }
 }
