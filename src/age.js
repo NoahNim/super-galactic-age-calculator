@@ -9,4 +9,9 @@ export class galactic {
     let userDate = new Date(this.birthdate);
     return Math.floor((today.getTime() - userDate.getTime()) / 1000);
   }
+  earthAge(){
+    let ageEarth = Math.floor(this.ageInSeconds() / 31536000);
+    return ageEarth;
+  }
+
 }

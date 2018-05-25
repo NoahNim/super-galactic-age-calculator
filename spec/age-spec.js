@@ -10,4 +10,8 @@ describe('galactic', function() {
     expect(testInput.ageInSeconds()).toEqual((Math.floor((today.getTime() - testDate.getTime()) / 1000)));
   });
 
+  it('should test users age in earth years', function(){
+    let testInput = new galactic('1990-04-21', 70);
+    expect(testInput.earthAge()).toEqual(28);
+  });
 })
