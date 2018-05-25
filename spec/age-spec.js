@@ -30,4 +30,8 @@ describe('galactic', function() {
     let testInput = new galactic('1990-04-21', 70);
     expect(testInput.jupiterAge()).toEqual(2);
   });
+  it('should test users life expectancy on mercury', function(){
+    let testInput = new galactic('1990-04-21', 70);
+    expect(testInput.mercuryLifeExpectancy()).toEqual(291);
+  });
 })

@@ -29,4 +29,8 @@ export class galactic {
     let ageJupiter = Math.floor(this.ageInSeconds() / 31536000 / 11.86);
     return ageJupiter;
   }
+  mercuryLifeExpectancy(){
+    let mercuryLifeExpectancy = Math.floor(this.lifeExpectancy/0.24);
+    return mercuryLifeExpectancy;
+  }
 }
