@@ -14,4 +14,20 @@ describe('galactic', function() {
     let testInput = new galactic('1990-04-21', 70);
     expect(testInput.earthAge()).toEqual(28);
   });
+  it('should test users age in mercury years', function(){
+    let testInput = new galactic('1990-04-21', 70);
+    expect(testInput.mercuryAge()).toEqual(117);
+  });
+  it('should test users age in venus years', function(){
+    let testInput = new galactic('1990-04-21', 70);
+    expect(testInput.venusAge()).toEqual(45);
+  });
+  it('should test users age in mars years', function(){
+    let testInput = new galactic('1990-04-21', 70);
+    expect(testInput.marsAge()).toEqual(14);
+  });
+  it('should test users age in jupiter years', function(){
+    let testInput = new galactic('1990-04-21', 70);
+    expect(testInput.jupiterAge()).toEqual(2);
+  });
 })
