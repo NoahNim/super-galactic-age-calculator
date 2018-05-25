@@ -1,7 +1,8 @@
 export class galactic {
-  constructor(birthdate, lifeExpectancy){
+  constructor(birthdate, lifeExpectancy, age){
     this.birthdate = birthdate;
     this.lifeExpectancy = lifeExpectancy;
+    this.age = age;
   }
 
   ageInSeconds(){
@@ -31,18 +32,42 @@ export class galactic {
   }
   mercuryLifeExpectancy(){
     let mercuryLifeExpectancy = Math.floor(this.lifeExpectancy/.24);
+    let userAge = Math.floor(this.age/.24);
+    let surpassed = userAge - mercuryLifeExpectancy;
+    if (userAge > mercuryLifeExpectancy) {
+      return 'Wow you surpassed this planets life expectancy by ' + surpassed;
+    } else {
     return mercuryLifeExpectancy;
+    }
   }
   venusLifeExpectancy(){
     let venusLifeExpectancy = Math.floor(this.lifeExpectancy/.62);
+    let userAge = Math.floor(this.age/.62);
+    let surpassed = userAge - venusLifeExpectancy;
+    if (userAge > venusLifeExpectancy) {
+      return 'Wow you surpassed this planets life expectancy by ' + surpassed;
+    } else {
     return venusLifeExpectancy;
+    }
   }
   marsLifeExpectancy(){
     let marsLifeExpectancy = Math.floor(this.lifeExpectancy/1.88);
+    let userAge = Math.floor(this.age/1.88);
+    let surpassed = userAge - marsLifeExpectancy;
+    if (userAge > marsLifeExpectancy) {
+      return 'Wow you surpassed this planets life expectancy by ' + surpassed;
+    } else {
     return marsLifeExpectancy;
+    }
   }
   jupiterLifeExpectancy(){
     let jupiterLifeExpectancy = Math.floor(this.lifeExpectancy/11.86);
+    let userAge = Math.floor(this.age/11.86);
+    let surpassed = userAge - jupiterLifeExpectancy;
+    if (userAge > jupiterLifeExpectancy) {
+      return 'Wow you surpassed this planets life expectancy by ' + surpassed;
+    } else {
     return jupiterLifeExpectancy;
+    }
   }
 }
