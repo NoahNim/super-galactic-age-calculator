@@ -27,7 +27,7 @@ describe('galactic', function() {
   });
   it('should test users age in mars years', function(){
     let testInput = new galactic('1990-04-21', 70, 28);
-    expect(testInput.marsAge()).toEqual(14);
+    expect(testInput.marsAge()).toEqual(15);
   });
   it('should test users age in jupiter years', function(){
     let testInput = new galactic('1990-04-21', 70, 28);
